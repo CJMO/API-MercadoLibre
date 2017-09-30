@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      MercadoSearch CJMO
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>Artículo a buscar</ion-label>
+        <ion-input placeholder="Nombre de artículo a buscar" name="buscar" id="buscar" [(ngModel)]="nombreArticulo" ></ion-input>
+      
+      </ion-item>
+    
+  <button ion-button block (click)="buscar()">BUSCAR</button>
+  <div id="resultados"><h1>LISTA DE RESULTADOS</h1></div>
+</ion-content>
